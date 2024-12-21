@@ -32,33 +32,35 @@ const faqs = [
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
-
   return (
-    <section id="faq" className="py-20 bg-gray-50">
+    <section className="py-24 bg-gradient-to-b from-white to-orange-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">الأسئلة الشائعة</h2>
-          <p className="mt-4 text-xl text-gray-600">إجابات على الأسئلة الأكثر شيوعًا حول خدماتنا</p>
+        <div className="text-center space-y-4">
+          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-400">
+            الأسئلة الشائعة
+          </h2>
+          <p className="text-xl text-gray-600">إجابات على الأسئلة الأكثر شيوعًا حول خدماتنا</p>
         </div>
-        <div className="mt-12 space-y-6">
+        <div className="mt-16 space-y-6">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
+            <div key={index} 
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
               <button
-                className="w-full text-right px-6 py-4 focus:outline-none"
+                className="w-full text-right px-8 py-6 focus:outline-none"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 <div className="flex items-center justify-between">
-                  <span className="font-medium text-lg text-gray-900">{faq.question}</span>
+                  <span className="text-xl font-bold text-gray-900">{faq.question}</span>
                   {openIndex === index ? (
-                    <ChevronUp className="h-5 w-5 text-blue-500" />
+                    <ChevronUp className="h-6 w-6 text-blue-500" />
                   ) : (
-                    <ChevronDown className="h-5 w-5 text-blue-500" />
+                    <ChevronDown className="h-6 w-6 text-blue-500" />
                   )}
                 </div>
               </button>
               {openIndex === index && (
-                <div className="px-6 pb-4">
-                  <p className="text-gray-600">{faq.answer}</p>
+                <div className="px-8 pb-6">
+                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </div>
@@ -67,6 +69,7 @@ const FAQ = () => {
       </div>
     </section>
   )
+  
 }
 
 export default FAQ

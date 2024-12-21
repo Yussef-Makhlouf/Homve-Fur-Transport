@@ -65,34 +65,21 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-8 xl:mt-0">
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              اشترك في نشرتنا الإخبارية
-            </h3>
-            <p className="mt-4 text-base text-gray-300">
-              احصل على آخر الأخبار والتحديثات من سماء الأزرق للنقل.
-            </p>
-            <form className="mt-4 sm:flex sm:max-w-md">
-              <label htmlFor="email-address" className="sr-only">
-                البريد الإلكتروني
-              </label>
-              <input
-                type="email"
-                name="email-address"
-                id="email-address"
-                autoComplete="email"
-                required
-                className="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
-                placeholder="أدخل بريدك الإلكتروني"
-              />
-              <div className="mt-3 rounded-md sm:mt-0 sm:mr-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-blue-500"
-                >
-                  اشترك
-                </button>
-              </div>
-            </form>
+            <Link 
+              href="https://fashne.net" 
+              target="_blank"
+              className="group inline-flex flex-col items-center space-y-2 transition-colors duration-300"
+            >
+              <span className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                Designed by
+              </span>
+              <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent group-hover:from-orange-400 group-hover:to-orange-300">
+                Fashne
+              </span>
+              <span className="text-sm text-gray-400">
+                for Digital Marketing
+              </span>
+            </Link>
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
