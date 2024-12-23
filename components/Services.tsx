@@ -5,37 +5,31 @@ const services = [
     name: 'النقل المنزلي',
     description: 'خدمات نقل منزلية شاملة مع عناية فائقة بجميع ممتلكاتك.',
     icon: Home,
-    image: '/cover 03.webp'
   },
   {
     name: 'النقل التجاري',
     description: 'حلول نقل متخصصة للشركات والمكاتب مع الحد الأدنى من تعطيل الأعمال.',
     icon: Building,
-    image: '/cover 03.webp'
   },
   {
     name: 'التعبئة والتغليف',
     description: 'خدمات تعبئة احترافية باستخدام مواد عالية الجودة لحماية مقتنياتك.',
     icon: Box,
-    image: '/cover 03.webp'
   },
   {
     name: 'النقل لمسافات طويلة',
     description: 'خدمات نقل آمنة وفعالة للانتقال بين المدن والمناطق البعيدة.',
     icon: Truck,
-    image: '/cover 03.webp'
   },
   {
     name: 'النقل الدولي',
     description: 'خدمات نقل دولية شاملة مع التعامل مع كافة الإجراءات الجمركية.',
     icon: Globe,
-    image: '/cover 03.webp'
   },
   {
     name: 'التخزين الآمن',
     description: 'مرافق تخزين آمنة ومكيفة لتلبية احتياجات التخزين قصيرة وطويلة المدى.',
     icon: ShieldCheck,
-    image: '/cover 03.webp'
   },
 ]
 const Services = () => {
