@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /internal/
+Disallow: /*.json$
+Disallow: /*?*
+Disallow: /search
+
+# Block common bots that might strain your server
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Allow specific bots with rate limiting
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: bingbot
+Crawl-delay: 2
+
+# Sitemaps
+Sitemap:https://homo-ve.com/sitemap.xml
+Sitemap:https://homo-ve.com/sitemap-posts.xml
+Sitemap:https://homo-ve.com/sitemap-products.xml
