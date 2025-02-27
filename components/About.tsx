@@ -1,4 +1,4 @@
-import { CheckCircle, Star, Shield, Clock, Truck, Settings } from 'lucide-react'
+import {  Star, Shield, Clock, Truck, Settings } from 'lucide-react'
 
 const features = [
   {
