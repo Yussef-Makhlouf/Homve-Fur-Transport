@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Home, Menu, X } from 'lucide-react'
 import Link from 'next/link'
+import TrackingPhoneButton from './TrackingPhoneButton'
 // import Image from 'next/image'
 
 const Navbar = () => {
@@ -28,7 +29,12 @@ const Navbar = () => {
               <Link href="/" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">الرئيسية</Link>
               <Link href="#services" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">خدماتنا</Link>
               <Link href="#about" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">من نحن</Link>
-              <Link href="#contact" className="px-4 py-2 rounded-xl bg-gradient-to-r from-orange-500 to-orange-400 text-white font-medium hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">اتصل بنا</Link>
+              <TrackingPhoneButton 
+                phoneNumber="0565265233"
+                className="px-4 py-2 rounded-xl bg-gradient-to-r from-orange-500 to-orange-400 text-white font-medium hover:shadow-md transition-all duration-300 hover:-translate-y-0.5"
+              >
+                اتصل بنا
+              </TrackingPhoneButton>
             </div>
           </div>
           <div className="-ml-2 flex md:hidden">
@@ -53,7 +59,12 @@ const Navbar = () => {
             <Link href="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 transition-colors">الرئيسية</Link>
             <Link href="#services" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 transition-colors">خدماتنا</Link>
             <Link href="#about" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 transition-colors">من نحن</Link>
-            <Link href="tel:0565265233" className="block px-3 py-2 rounded-md text-base font-medium text-orange-500 hover:text-orange-600 transition-colors">اتصل بنا</Link>
+            <TrackingPhoneButton 
+              phoneNumber="0565265233"
+              className="block w-full text-right px-3 py-2 rounded-md text-base font-medium text-orange-500 hover:text-orange-600 transition-colors"
+            >
+              اتصل بنا
+            </TrackingPhoneButton>
           </div>
         </div>
       )}

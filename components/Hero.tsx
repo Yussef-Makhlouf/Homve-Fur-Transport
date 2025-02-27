@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import TrackingPhoneButton from "./TrackingPhoneButton";
 
 const Hero = () => {
   return (
@@ -22,12 +23,12 @@ const Hero = () => {
               مع هوموف لنقل الاثاث و العفش، نضمن لك تجربة نقل سلسة وآمنة
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="tel:0565265233"
+              <TrackingPhoneButton
+                phoneNumber="0565265233"
                 className="px-8 py-4 rounded-xl bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold transition-all duration-300 hover:shadow-[0_10px_20px_-10px_rgba(255,137,53,0.7)] hover:-translate-y-1"
               >
                 احصل على عرض سعر
-              </Link>
+              </TrackingPhoneButton>
               <Link
                 href="https://wa.me/+966565265233"
                 className="px-8 py-4 rounded-xl border-2 border-orange-400 text-orange-500 font-bold transition-all duration-300 hover:bg-orange-50 hover:-translate-y-1"

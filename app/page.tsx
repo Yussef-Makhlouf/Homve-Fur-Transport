@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import PopularDistricts from "@/components/PopularDistricts";
 import Services from "@/components/Services";
+import ServicesDescription from "@/components/ServicesDescription";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Services />
       <Gallery />
+      <ServicesDescription />
       <PopularDistricts />
       <FAQ />
       <Footer />

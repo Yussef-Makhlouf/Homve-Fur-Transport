@@ -82,6 +82,33 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="theme-color" content="#ff6b2b" />
         <link rel="manifest" href="/manifest.json" />
+        {/* Google Ads Tag */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16595993654"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16595993654');
+
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-16595993654/kWc4CMLDtqIaELaIy-k9',
+                  'value': 1.0,
+                  'currency': 'EGP',
+                  'event_callback': callback
+                });
+                return false;
+              }
+            `
+          }}
+        />
       </head>
       <body className={tajawal.className}>
         {children}
